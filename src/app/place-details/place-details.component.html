@@ -1,0 +1,25 @@
+
+
+
+<mat-card class="container card rounded" >
+    <div class="cancel-btn" (click)="closeContainer()">
+        <mat-icon>cancel</mat-icon>
+    </div>
+    <mat-card-title class="country-name">{{place}}</mat-card-title>
+    <div class="image-container">
+        <div class="arrow-container" (click)="priviousImage()" >
+            <mat-icon class="left-arrow" >keyboard_arrow_left</mat-icon>
+        </div>
+
+        <div class="right-arrow-container" (click)="nextImage()">
+            <mat-icon class="left-arrow">keyboard_arrow_right</mat-icon>
+        </div>
+       
+        <!-- <mat-icon class="right-arrow">keyboard_arrow_right</mat-icon> -->
+        <img [src]="this.img" mat-card-image>
+    </div>
+   
+
+</mat-card>
+
+

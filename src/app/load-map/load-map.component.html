@@ -1,0 +1,19 @@
+
+
+
+
+<div class="search">
+    <input type="text" class="form-control" [(ngModel)]="userInput">
+    <button class="btn bg-primary text-white" (click)="collectInfo()">submit</button>
+    <button [disabled]="showDetails" class="btn btn-primary text-white" (click)="showDetailsFunc()">Deatils</button>
+</div>
+
+<main>
+    <div id="map" style="height: 98vh;"></div>
+</main>
+
+<router-outlet></router-outlet>
+
+
+
+
